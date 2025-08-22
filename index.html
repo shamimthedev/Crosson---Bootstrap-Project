@@ -3,364 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crosson - Bootstrap Project</title>
+    <title>Crosson - Advanced Food Industry Machinery</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <!-- Header Section Start -->
-    <section id="header-section">
-      <div class="top-header">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header-section" id="header">
+      <!-- Top Header -->
+      <div class="top-header d-none d-md-flex">
         <div class="top-left">
-          <i class="fa-solid fa-phone-volume"></i>
-          <div class="top-left-txt">
-            <p>Do you need help?</p>
-            <span>+0(850) 544 7514</span>
+          <i class="fas fa-phone-volume"></i>
+          <div>
+            <small>Need Help?</small>
+            <div><strong>+0(850) 544 7514</strong></div>
           </div>
         </div>
         <div class="top-logo">
-          <a href="#"><img src="images/logo.png" alt="logo" /></a>
+          <a href="#"><img src="/images/logo.png" alt="Crosson Logo" /></a>
         </div>
         <div class="top-right">
-          <div class="top-social">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="https://flagcdn.com/w20/gb.png"
+              alt="English"
+              width="20"
+            />
+            <div>
+              <small>Language</small>
+              <div><strong>English</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-md-none" href="#">
+            <img
+              src="/images/logo.png"
+              alt="Crosson"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#solutions">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
-          <div class="top-lang">
-            <img src="images/England-flag.png" alt="England flag icon" />
-            <div class="top-lang-txt">
-              <p>Language</p>
-              <span>English</span>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="top-header-divider"></div>
-      <div class="container">
-        <nav class="navbar">
-          <ul class="mx-auto nav-list">
-            <li>
-              <a href="#">Products <i class="fa-solid fa-angle-down"></i></a>
-            </li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Softwares</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Corporate</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- Header Section End -->
+      </nav>
+    </header>
 
-    <!-- Hero Section Start -->
-    <section id="hero-section">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-8">
-            <div class="hero-content">
-              <h1>
-                We make Filling & Packaging <br />
-                Machines for <span>Food Industry</span>
+            <div class="hero-content" data-aos="fade-right">
+              <h1 class="hero-title">
+                We Make Advanced Filling & Packaging<br />
+                Machines for <span class="hero-highlight">Food Industry</span>
               </h1>
-              <p class="hero-txt">
-                With our flexible production capacity and high technology, we
-                produce customized solutions for your needs.
+              <p class="hero-text">
+                With our flexible production capacity and cutting-edge
+                technology, we create innovative, customized solutions that meet
+                your specific needs and exceed industry standards.
               </p>
-              <div class="hero-btn-with-contact">
-                <div class="hero-btn">
-                  <a>Our Products</a>
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
-                <div class="hero-contact">
-                  <i class="fa-solid fa-phone-volume"></i>
-                  <p>
-                    Sales Department <br />
-                    <span>+0(850) 544 7514</span>
-                  </p>
+              <div class="hero-buttons">
+                <a href="#products" class="btn-primary">
+                  Explore Products <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="contact-info">
+                  <i class="fas fa-phone-volume"></i>
+                  <div>
+                    <small>Sales Department</small>
+                    <strong>+0(850) 544 7514</strong>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="text-center" data-aos="fade-left">
+              <i
+                class="fas fa-cogs"
+                style="font-size: 20rem; color: rgba(252, 217, 0, 0.2)"
+              ></i>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Hero Section End -->
 
-    <!-- About Section Start -->
-    <section id="about-section">
-      <div class="container">
-        <div class="about-wrapper">
-          <h5>WHO WE ARE</h5>
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="about-left">
-                <h2>
-                  Crosson is an international group dedicated to the
-                  <span>food industry.</span>
-                </h2>
-                <p>
-                  Crosson has twenty years’ experience in food, quality,
-                  automation and software which has been established in the food
-                  sector for Research, Efficiency and Solution Production.
-                </p>
-                <p>
-                  It was not long to discover that supported to knowledge by
-                  scientific perspectives, would be the solution to the real
-                  needs of the sector.
-                </p>
-                <div class="about-btn-with-link">
-                  <div class="about-btn">
-                    <a>About Us</a>
-                    <i class="fa-solid fa-angle-right"></i>
-                  </div>
-                  <a class="ab-link" href="#">Quality Certificates</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 offset-1">
-              <div class="ab-right-content-box">
-                <div class="ab-right-box">
-                  <img src="images/ab-country-icon.png" alt="country-icon" />
-                  <div class="ab-right-box-txt">
-                    <h6>Exported to 24 Countries</h6>
-                    <p>168 companies in 24 countries use our machines</p>
-                  </div>
-                </div>
-                <div class="ab-right-box">
-                  <img src="images/ab-products-icon.png" alt="products-icon" />
-                  <div class="ab-right-box-txt">
-                    <h6>Exported to 24 Countries</h6>
-                    <p>168 companies in 24 countries use our machines</p>
-                  </div>
-                </div>
-                <div class="ab-right-box">
-                  <img src="images/ab-goal-icon.png" alt="goal-icon" />
-                  <div class="ab-right-box-txt">
-                    <h6>Exported to 24 Countries</h6>
-                    <p>168 companies in 24 countries use our machines</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Service Section Start -->
-    <section id="service-section">
-      <div class="container">
-        <div class="service-wrapper">
-          <h5>WHAT WE DO</h5>
-          <div class="row">
-            <div class="col-lg-8 service-left">
-              <h2>
-                With our flexible production capacity and high technology, we
-                <span>produce customized</span> solutions for your needs.
-              </h2>
-            </div>
-            <div class="col-lg-4">
-              <div class="service-right-box">
-                <img src="images/service-machine-icon.png" alt="machine-icon" />
-                <div class="service-right-txt">
-                  <h6>Watch Our Machines</h6>
-                  <span>2.34Min, 14.7MB</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="service-bottom-box sr-box-1">
-                <img src="images/service-icon-1.png" alt="" />
-                <p>Filling and Packaging Machines</p>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="service-bottom-box">
-                <img src="images/service-icon-2.png" alt="" />
-                <p>End of Line Solutions</p>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="service-bottom-box">
-                <img src="images/service-icon-3.png" alt="" />
-                <p>Food Industry Machines Software</p>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="service-bottom-box">
-                <img src="images/service-icon-4.png" alt="" />
-                <p>7/24 Techincal Support</p>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="service-bottom-box">
-                <img src="images/service-icon-1.png" alt="" />
-                <p>Special Solutions Your Needs</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service Section End -->
-
-    <!-- Machine Section Start -->
-    <section id="machine-section">
+    <!-- Stats Section -->
+    <section class="stats-section section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="machine-left-content">
-              <h3>Filling and Packaging Machines</h3>
-              <p>
-                Liquorice lemon drops powder chocolate liquorice candy dessert
-                gummi bears. Caramels marzipan donut jujubes sweet roll. Powder
-                croissant toffee shortbread chocolate sweet pie.
-                <span>Read more <i class="fa-solid fa-angle-right"></i></span>
-              </p>
-              <div class="machine-img-box">
-                <figure>
-                  <img src="images/rotary-machine.png" alt="rotary-machine" />
-                  <figcaption>Rotary Machines</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/lenear-machine.png" alt="lenear-machine" />
-                  <figcaption>Linear Machines</figcaption>
-                </figure>
-                <figure>
-                  <img
-                    src="images/bottle-filling-machine.png"
-                    alt="bottle-filling-machine"
-                  />
-                  <figcaption>Bottle Filling Machines</figcaption>
-                </figure>
-              </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+              <span class="stat-number" data-counter="24">0</span>
+              <div class="stat-label">Countries Exported</div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="machine-right-content">
-              <div class="machine-right-top-box">
-                <div class="ma-top-txt">
-                  <h5>Let's Plan an Online Meeting</h5>
-                  <p>We are Available Now</p>
-                </div>
-                <img
-                  src="images/machine-calendar-icon.png"
-                  alt="calendar-icon"
-                />
-              </div>
-              <div class="machine-right-bottom-box">
-                <h4>Are you interested? Contact our sales department now</h4>
-                <div class="ma-bottom-txt margin-bottom">
-                  <i class="fa-solid fa-phone-volume"></i>
-                  <p>
-                    <span class="ma-p-bold">Erkan giris</span> / Sales Manager
-                    <br />
-                    <span class="ma-p-big">+0(850) 544 7514</span>
-                  </p>
-                </div>
-                <div class="ma-bottom-txt">
-                  <i class="fa-solid fa-envelope-open"></i>
-                  <p>
-                    Sales Department <br />
-                    <span class="ma-p-big">sales@crosson.com</span>
-                  </p>
-                </div>
-              </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+              <span class="stat-number" data-counter="168">0</span>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+              <span class="stat-number" data-counter="20">0</span>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+              <span class="stat-number" data-counter="500">0</span>
+              <div class="stat-label">Products Delivered</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="top-header-divider"></div>
-    <!-- Machine Section End -->
 
-    <!-- Blog Section Start -->
-    <section id="blog-section">
+    <!-- About Section -->
+    <section class="section" id="about">
       <div class="container">
-        <div class="blog-wrapper">
-          <h5>HOW WE DO</h5>
-          <div class="row">
-            <div class="col-lg-8 blog-heading">
-              <h2>A journey from <span>design to product.</span></h2>
-              <p>
-                Starting from the planning of the product our customer wants;
-                design, manufacturing, software, mounting, installation &
-                comissioning are made by us.
-              </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="section-subtitle">WHO WE ARE</div>
+            <h2 class="section-title">
+              Crosson is an international leader in
+              <span class="highlight-text">food industry solutions</span>
+            </h2>
+            <p class="mb-4">
+              With over twenty years of experience in food processing, quality
+              control, automation, and software development, Crosson has
+              established itself as a trusted partner in the food sector for
+              Research, Efficiency, and Solution Production.
+            </p>
+            <p class="mb-4">
+              Our scientific approach combined with deep industry knowledge
+              allows us to provide real solutions to the complex challenges
+              facing today's food industry.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#about-more" class="btn-primary">
+                Learn More <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#certificates" class="btn-outline"
+                >Quality Certificates</a
+              >
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="blog-post-wrapper">
-                <div class="blog-item-box">
-                  <img
-                    src="images/blog-feature-image-1.png"
-                    alt="blog-feature-image-1"
-                  />
-                  <h4>Product Design</h4>
-                  <p class="blog-txt">
-                    Toffee sweet roll caramels oat cake lemon drops cupcake
-                    sweet roll halvah ice cream.
-                  </p>
-                  <div class="blog-read-more">
-                    <p>Read more</p>
-                    <i class="fa-solid fa-angle-right"></i>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
                   </div>
+                  <h5>Global Reach</h5>
+                  <p>
+                    Exported to 24 countries with 168 companies using our
+                    advanced machinery solutions.
+                  </p>
                 </div>
-                <div class="blog-item-box">
-                  <img
-                    src="images/blog-feature-image-2.png"
-                    alt="blog-feature-image-2"
-                  />
-                  <h4>Product Design</h4>
-                  <p class="blog-txt">
-                    Toffee sweet roll caramels oat cake lemon drops cupcake
-                    sweet roll halvah ice cream.
-                  </p>
-                  <div class="blog-read-more">
-                    <p>Read more</p>
-                    <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="col-12">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i class="fas fa-award"></i>
                   </div>
+                  <h5>Quality Excellence</h5>
+                  <p>
+                    ISO certified manufacturing with rigorous quality control
+                    and testing procedures.
+                  </p>
                 </div>
-                <div class="blog-item-box">
-                  <img
-                    src="images/blog-feature-image-3.png"
-                    alt="blog-feature-image-3"
-                  />
-                  <h4>Product Design</h4>
-                  <p class="blog-txt">
-                    Toffee sweet roll caramels oat cake lemon drops cupcake
-                    sweet roll halvah ice cream.
-                  </p>
-                  <div class="blog-read-more">
-                    <p>Read more</p>
-                    <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="col-12">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                    <i class="fas fa-rocket"></i>
                   </div>
+                  <h5>Innovation First</h5>
+                  <p>
+                    Cutting-edge technology and continuous R&D for tomorrow's
+                    food industry challenges.
+                  </p>
                 </div>
               </div>
             </div>
@@ -368,187 +265,516 @@
         </div>
       </div>
     </section>
-    <!-- Blog Section End -->
 
-    <!-- News Section Start -->
-    <section id="news-section">
+    <!-- Services Section -->
+    <section class="section bg-light" id="services">
       <div class="container">
-        <div class="blog-wrapper">
-          <h5>COMPANY NEWS</h5>
-          <div class="row">
-            <div class="col-lg-8 blog-heading">
-              <h2>News from <span>Crosson</span></h2>
+        <div class="text-center mb-5">
+          <div class="section-subtitle">WHAT WE DO</div>
+          <h2 class="section-title" data-aos="fade-up">
+            Comprehensive
+            <span class="highlight-text">Food Industry Solutions</span>
+          </h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">
+            From design to implementation, we provide end-to-end solutions for
+            your food processing needs.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-industry"></i>
+              </div>
+              <h5>Filling & Packaging Machines</h5>
               <p>
-                Cake pudding lollipop pastry cupcake chocolate. Gummi bears
-                halvah sesame snaps chocolate cake gummies sugar plum cotton
-                candy cupcake sweet
+                Advanced automated solutions for precise filling and efficient
+                packaging operations.
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="news-post-wrapper">
-              <div class="col-lg-6">
-                <div class="news-item-box">
-                  <img
-                    src="images/news-feature-image-1.png"
-                    alt="news-feature-image-1"
-                  />
-                  <div class="news-item-txt">
-                    <h4>
-                      Crosson Holding’s 58th ordinary general assembly convened
-                    </h4>
-                    <p class="news-txt">
-                      Toffee sweet roll caramels oat cake lemon drops cupcake
-                      sweet roll halvah ice cream.
-                    </p>
-                    <div class="about-btn">
-                      <a>Read more</a>
-                      <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-conveyor-belt"></i>
               </div>
-              <div class="col-lg-6">
-                <div class="news-item-box">
-                  <img
-                    src="images/news-feature-image-2.png"
-                    alt="news-feature-image-1"
-                  />
-                  <div class="news-item-txt">
-                    <h4>
-                      Crosson Holding’s 58th ordinary general assembly convened
-                    </h4>
-                    <p class="news-txt">
-                      Toffee sweet roll caramels oat cake lemon drops cupcake
-                      sweet roll halvah ice cream.
-                    </p>
-                    <div class="about-btn">
-                      <a>Read more</a>
-                      <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
+              <h5>End of Line Solutions</h5>
+              <p>
+                Complete production line integration with quality control and
+                packaging systems.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h5>Smart Software Solutions</h5>
+              <p>
+                Industry 4.0 compatible software for monitoring, control, and
+                optimization.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h5>24/7 Technical Support</h5>
+              <p>
+                Round-the-clock technical assistance and maintenance support
+                worldwide.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h5>Custom Solutions</h5>
+              <p>
+                Tailored machinery and systems designed specifically for your
+                unique requirements.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="feature-card text-center">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h5>Quality Assurance</h5>
+              <p>
+                Comprehensive testing and certification ensuring the highest
+                industry standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-subtitle">OUR PRODUCTS</div>
+          <h2 class="section-title" data-aos="fade-up">
+            Advanced <span class="highlight-text">Machinery Solutions</span>
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <div class="product-content">
+                <h5>Rotary Machines</h5>
+                <p>
+                  High-speed rotary filling systems for maximum efficiency and
+                  precision in liquid processing.
+                </p>
+                <a href="#" class="btn-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <i class="fas fa-arrows-alt-h"></i>
+              </div>
+              <div class="product-content">
+                <h5>Linear Machines</h5>
+                <p>
+                  Versatile linear filling solutions perfect for various
+                  container sizes and product types.
+                </p>
+                <a href="#" class="btn-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="product-card">
+              <div class="product-image">
+                <i class="fas fa-wine-bottle"></i>
+              </div>
+              <div class="product-content">
+                <h5>Bottle Filling Machines</h5>
+                <p>
+                  Specialized bottle filling systems with advanced capping and
+                  sealing technologies.
+                </p>
+                <a href="#" class="btn-outline">Learn More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- News Section End -->
 
-    <!-- Footer Section Start -->
-    <section id="footer-section">
+    <!-- Testimonials Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-subtitle">TESTIMONIALS</div>
+          <h2 class="section-title" data-aos="fade-up">
+            What Our <span class="highlight-text">Clients Say</span>
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                "Crosson's machinery has revolutionized our production line. The
+                efficiency and reliability are unmatched in the industry."
+              </p>
+              <div class="testimonial-author">
+                <strong>Sarah Johnson</strong><br />
+                <small>Production Manager, FoodCorp Ltd.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                "The technical support team is exceptional. They're always
+                available when we need them, ensuring minimal downtime."
+              </p>
+              <div class="testimonial-author">
+                <strong>Michael Chen</strong><br />
+                <small>Operations Director, Global Foods Inc.</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div class="testimonial-quote">"</div>
+              <p class="testimonial-text">
+                "Custom solutions that perfectly fit our unique requirements.
+                Crosson truly understands the food industry."
+              </p>
+              <div class="testimonial-author">
+                <strong>Emma Rodriguez</strong><br />
+                <small>CEO, Premium Beverages</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="blog-heading">
-              <h2>Have <span>any questions?</span></h2>
-              <p>Contact Us</p>
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="section-subtitle">FREQUENTLY ASKED QUESTIONS</div>
+            <h2 class="section-title">
+              Got <span class="highlight-text">Questions?</span>
+            </h2>
+            <p class="mb-4">
+              Find answers to the most common questions about our products and
+              services. Can't find what you're looking for? Contact our expert
+              team.
+            </p>
+            <a href="#contact" class="btn-primary">
+              Contact Us <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <span
+                    >What types of food products can your machines handle?</span
+                  >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                  Our machines are designed to handle a wide range of food
+                  products including liquids, semi-solids, powders, and granular
+                  materials. From beverages and sauces to dairy products and
+                  confectionery items.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <span
+                    >Do you provide installation and training services?</span
+                  >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                  Yes, we provide complete installation services and
+                  comprehensive training for your operators. Our technical team
+                  ensures smooth commissioning and optimal performance.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <span>What is the warranty period for your machines?</span>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                  We offer a comprehensive 2-year warranty on all our machines,
+                  covering parts and technical support. Extended warranty
+                  options are also available.
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                  <span
+                    >Can you customize machines for specific requirements?</span
+                  >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                  Absolutely! We specialize in custom solutions tailored to your
+                  specific production needs, container types, and processing
+                  requirements.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-2 offset-2">
-            <div class="ft-bottom-txt">
-              <i class="fa-solid fa-phone-volume"></i>
-              <p>
-                Phone number <br />
-                <span class="ma-p-big">+0(850) 544 7514</span>
-              </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section bg-light" id="contact">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-subtitle">GET IN TOUCH</div>
+          <h2 class="section-title" data-aos="fade-up">
+            Ready to <span class="highlight-text">Transform</span> Your
+            Production?
+          </h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">
+            Contact our experts to discuss your specific requirements and get a
+            customized solution.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card text-center h-100">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h5>Call Us</h5>
+              <p>Speak directly with our sales team</p>
+              <strong>+0(850) 544 7514</strong>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card text-center h-100">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h5>Email Us</h5>
+              <p>Send us your detailed requirements</p>
+              <strong>sales@crosson.com</strong>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card text-center h-100">
+              <div class="feature-icon mx-auto">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h5>Visit Us</h5>
+              <p>Schedule a facility tour</p>
+              <strong>One Apple Park Way<br />Cupertino, CA 95014</strong>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+              <h4 class="text-center mb-4">Send us a Message</h4>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Company"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <select class="form-select" required>
+                      <option value="">Select Product Interest</option>
+                      <option value="rotary">Rotary Machines</option>
+                      <option value="linear">Linear Machines</option>
+                      <option value="bottle">Bottle Filling Machines</option>
+                      <option value="custom">Custom Solution</option>
+                      <option value="consultation">General Consultation</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Tell us about your requirements"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn-primary">
+                      Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h2 class="f-logo">Crosson</h2>
+            <p class="mb-4">
+              Leading manufacturer of advanced filling and packaging machinery
+              for the global food industry. Innovation, quality, and reliability
+              in every solution.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
           <div class="col-lg-2">
-            <div class="ft-bottom-txt">
-              <i class="fa-solid fa-envelope-open"></i>
-              <p>
-                E-mail <br />
-                <span class="ma-p-big">sales@crosson.com</span>
-              </p>
+            <h5 class="text-white mb-3">Products</h5>
+            <div class="footer-links">
+              <a href="#" class="d-block mb-2">Filling Machines</a>
+              <a href="#" class="d-block mb-2">Packaging Systems</a>
+              <a href="#" class="d-block mb-2">Linear Solutions</a>
+              <a href="#" class="d-block mb-2">Rotary Systems</a>
+              <a href="#" class="d-block mb-2">Custom Machines</a>
             </div>
           </div>
           <div class="col-lg-2">
-            <div class="ft-bottom-txt">
-              <i class="fa-solid fa-location-dot"></i>
-              <div class="footer-loaction-txt">
-                <p>Headquarters</p>
-                <span>One Apple Park Way; Cupertino CA 95014, U.S.A.</span>
-                <p>Get Direction</p>
-              </div>
+            <h5 class="text-white mb-3">Solutions</h5>
+            <div class="footer-links">
+              <a href="#" class="d-block mb-2">End of Line</a>
+              <a href="#" class="d-block mb-2">Software Solutions</a>
+              <a href="#" class="d-block mb-2">Automation</a>
+              <a href="#" class="d-block mb-2">Quality Control</a>
+              <a href="#" class="d-block mb-2">Integration</a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h5 class="text-white mb-3">Company</h5>
+            <div class="footer-links">
+              <a href="#" class="d-block mb-2">About Us</a>
+              <a href="#" class="d-block mb-2">Our Values</a>
+              <a href="#" class="d-block mb-2">Careers</a>
+              <a href="#" class="d-block mb-2">News</a>
+              <a href="#" class="d-block mb-2">Contact</a>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <h5 class="text-white mb-3">Support</h5>
+            <div class="footer-links">
+              <a href="#" class="d-block mb-2">Technical Support</a>
+              <a href="#" class="d-block mb-2">Documentation</a>
+              <a href="#" class="d-block mb-2">Training</a>
+              <a href="#" class="d-block mb-2">Warranty</a>
+              <a href="#" class="d-block mb-2">Spare Parts</a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="footer-links-box">
-              <div class="ft-link-box">
-                <h4>Products</h4>
-                <ul>
-                  <li><a href="#">Filling Machines</a></li>
-                  <li><a href="#">Bottle Filling Series</a></li>
-                  <li><a href="#">Package Machines</a></li>
-                  <li><a href="#">Linear Machines</a></li>
-                  <li><a href="#">Rotary Machines</a></li>
-                </ul>
-              </div>
-              <div class="ft-link-box">
-                <h4>Solutions</h4>
-                <ul>
-                  <li><a href="#">End of Line Solutions</a></li>
-                  <li><a href="#">Food Industry Machines Software</a></li>
-                  <li><a href="#">Research Solutions</a></li>
-                  <li><a href="#">Conveyor Solutions</a></li>
-                  <li><a href="#">Special Solutions Your Needs</a></li>
-                </ul>
-              </div>
-              <div class="ft-link-box">
-                <h4>Corporate</h4>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Our Values</a></li>
-                  <li><a href="#">Human Resorces</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 offset-1">
-            <div class="footer-item-box">
-              <img src="images/footer-ladder-icon.png" alt="ladder-icon" />
-              <div class="news-item-txt">
-                <h4>Career Opportunities</h4>
-                <p class="news-txt">
-                  Cake pudding lollipop pastry cupcake chocolate. Gummi bears
-                  halvah sesame snaps.
-                </p>
-                <div class="footer-btn">
-                  <a>Opennig Positions</a>
-                  <i class="fa-solid fa-angle-right"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ft-copyright-box">
-              <p>Copyright by Erkan Giris | All rights reserverd</p>
-              <p>
-                Our Privacy and Personal Data Protection Policy | Terms and
-                Conditions of Use
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer Section End -->
 
-    <!-- JS Here -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/script.js"></script>
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="mb-0">&copy; 2024 Crosson. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <div class="footer-links d-inline-flex gap-3">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
